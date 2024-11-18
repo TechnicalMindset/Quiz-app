@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>Welcome to the Quiz App</h1>
+    </header>
+    <main>
+        <section class="quiz-selection">
+            <h2>Select a Quiz</h2>
+            <button onclick="loadQuiz('linux-bootcamp/quiz-01-file-structure')">Linux Quiz</button>
+            <button onclick="loadQuiz('python-bootcamp/quiz-01-variables-and-datatypes')">Python Quiz</button>
+            <button onclick="loadQuiz('cloud-computing-bootcamp/quiz-01-aws-services')">Cloud Computing Quiz</button>
+            <!-- Add more quizzes as needed -->
+        </section>
+        <section id="quiz-container" class="quiz-content">
+            <!-- Quiz content will load dynamically here -->
+        </section>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+</html>
